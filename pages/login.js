@@ -52,7 +52,7 @@ const Login = () => {
   )
 }
 
-export const getServerSideProps= withSession(async function ({req, res})  {
+export const getServerSideProps = withSession(async function ({req, res})  {
   // req.session.destroy('test_token')
   const token = req.session.get('test_token')
   console.log(token);
